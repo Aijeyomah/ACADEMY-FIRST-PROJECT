@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+            /* styles rely on the custom attribute "order-state" */
+            .order[order-state="new"] {
+              color: green;
+            }
+          
+            .order[order-state="pending"] {
+              color: blue;
+            }
+          
+            .order[order-state="canceled"] {
+              color: red;
+            }
+
+            .alert {
+                padding: 15px;
+                border: 1px solid #d6e9c6;
+                border-radius: 4px;
+                color: #3c763d;
+                background-color: #dff0d8;
+            }
+          </style>
+
+    </head>
+
+    <body>
+        <h1>Meet us</h1>
+        <div class="name">
+            <p> Hello People </p>
+            <p id="people"> Hello everyone </p>
+            <p> Hello People </p>
+        </div>
+
+        <div class="name">
+            <p> I am here </p>
+        
+        </div>
+        <div show-info='age'> </div>
+        <div show-info='name'> </div>
+       
+        <div class="order" order-state="new">
+            A new order.
+          </div>
+          
+          <div class="order" order-state="pending">
+            A pending order.
+          </div>
+          
+          <div class="order" order-state="canceled">
+            A canceled order.
+          </div>
+
+          <ol id="list">
+            <li>0</li>
+            <li>1</li>
+            <li>2</li>
+          </ol>
+          <p class='academy'></p>
+          <button >Click me</button>
+          <input type="text">
+          <a href="" onclick="event.preventDefault()">Go here</a>
+      
+        <script src="script.js"></script>
+    </body>
+
+</html>
